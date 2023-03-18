@@ -1,0 +1,113 @@
+.top-recommend {
+  position: relative;
+  width: 100%;
+
+  &__background {
+    background-color: #f4f4f4;
+    width: 100%;
+    max-width: 1202px;
+    height: 602px;
+    z-index: 0;
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 72px;
+    width: 100%;
+    max-width: 567px;
+    z-index: 1;
+    opacity: 0.7;
+  }
+
+  &__content {
+    position: absolute;
+    right: 99px;
+    top: 99px;
+    z-index: 2;
+    font-family: "SourceHanSans-Regular";
+
+    .content-header {
+      font-size: 32px;
+      letter-spacing: 2.56px;
+      line-height: 46px;
+      margin-bottom: 40px;
+
+      span:first-child {
+        font-family: "SourceHanSans-Bold";
+        font-size: 72px;
+        letter-spacing: 5.76px;
+        line-height: 105px;
+      }
+
+      span:last-child {
+        margin-left: -10px;
+      }
+    }
+
+    .content-description {
+      font-size: 20px;
+      letter-spacing: 1.6px;
+      line-height: 40px;
+    }
+  }
+
+  .btn-more {
+    position: absolute;
+    right: 80px;
+    top: 424px;
+    z-index: 2;
+  }
+
+  @media (max-width: 1024px) {
+    background: #f4f4f4;
+    padding-bottom: 72px;
+    &__background {
+      height: 0px;
+    }
+    &__image {
+      position: relative;
+      padding-right: 54px;
+      max-width: 100%;
+    }
+    &__content {
+      position: relative;
+      top: 25px;
+      left: 0;
+      right: 0;
+      margin: 0 18px;
+
+      .content-header {
+        font-family: "SourceHanSans-Medium";
+        font-size: 18px;
+        letter-spacing: 1.44px;
+        line-height: 26px;
+        margin-bottom: 24px;
+
+        span:first-child {
+          font-size: 48px;
+          letter-spacing: 1.92px;
+          line-height: 70px;
+        }
+
+        span:last-child {
+          margin-left: -6px;
+        }
+      }
+
+      .content-description {
+        font-size: 16px;
+        letter-spacing: 1.28px;
+        line-height: 28px;
+      }
+    }
+    .btn-more {
+      position: unset;
+      margin: 50px auto 0;
+    }
+  }
+
+  @media (min-width: 769px) and (min-width: 990px) {
+
+  }
+}

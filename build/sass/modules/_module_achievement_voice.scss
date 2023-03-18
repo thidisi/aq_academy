@@ -1,0 +1,221 @@
+// VOICE
+.voice {
+    background-color: #FFFFFF;
+
+    &-header {
+        position: relative;
+
+        &__content1 {
+            position: absolute;
+            top: 40px;
+            right: 0;
+
+            h5 {
+                margin: 0;
+                font-family: 'Montserrat-Bold';
+                color: #F4F4F4;
+                font-size: 100px;
+                letter-spacing: 4px;
+                // line-height: 24px;
+            }
+        }
+
+        &__content2 {
+            position: relative;
+            padding-top: 100px;
+            text-align: center;
+
+            h5 {
+                margin: 0;
+                font-family: 'Montserrat-SemiBold';
+                font-size: 48px;
+                letter-spacing: 1.92px;
+                // line-height: 24px;
+            }
+        }
+
+        &__content3 {
+            text-align: center;
+
+            h5 {
+                margin: 0;
+                font-family: 'SourceHanSans-Regular';
+                font-size: 16px;
+                letter-spacing: 1.6px;
+                // line-height: 40px;
+                white-space: nowrap;
+
+                span {
+                    font-family: 'Raleway-Regular';
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            &__content1 {
+                top: 50px !important;
+
+                h5 {
+                    font-size: 70px !important;
+                    letter-spacing: 2.8px !important;
+                    // line-height: 24px !important;
+                }
+            }
+
+            &__content2 {
+                padding-top: 80px !important;
+
+                h5 {
+                    font-size: 32px !important;
+                    letter-spacing: 1.28px !important;
+                    // line-height: 24px!important;
+                }
+            }
+
+            &__content3 {
+                h5 {
+                    font-size: 16px !important;
+                    letter-spacing: 1.6px !important;
+                    // line-height: 40px!important;
+                }
+            }
+        }
+    }
+
+    &-body {
+
+        padding-top: 56px;
+        padding-inline: 80px;
+
+        &__element {
+            position: relative;
+            min-height: 357px;
+            padding-bottom: 120px;
+
+            &-picture {
+                position: absolute;
+                background-color: #AAAAAA;
+                height: 218px;
+                width: 320px;
+
+                img {
+                    height: 100%;
+                    width: 100%
+                }
+
+                h5 {
+                    margin: 0;
+                    font-family: 'SourceHanSans-Bold';
+                    font-size: 32px;
+                    letter-spacing: 1.28px;
+                    // line-height: 32px;
+                    padding: 86px 127px 86px 128px;
+                    text-align: center;
+                    white-space: nowrap;
+                }
+
+                &-description {
+                    padding-top: 8px;
+                    // position: absolute;                
+
+                    p {
+                        margin: 0;
+                        padding: 0;
+                        color: #000000;
+                        font-family: 'SourceHanSans-Bold';
+                        font-size: 12px;
+                        letter-spacing: 0.96px;
+                        // line-height: 40px;                      
+                        text-align: right;
+                    }
+                }
+            }
+
+            &-info {
+                margin-left: 384px;
+                position: relative;
+
+                &-title {
+                    h5 {
+                        margin: 0;
+                        font-family: 'SourceHanSans-Regular';
+                        font-size: 20px;
+                        letter-spacing: 1.6px;
+                        line-height: 20px;
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            position: relative;
+                            width: 40px;
+                            background-color: #354FAD;
+                            height: 1px;
+                            bottom: -40px;
+                        }
+                    }
+                }
+
+                &-description {
+                    p {
+                        margin: 0;
+                        font-family: 'SourceHanSans-Regular';
+                        font-size: 16px;
+                        letter-spacing: 1.28px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 960px) {
+            padding-top: 60px !important;
+            padding-inline: 40px;
+
+            &__element {
+                position: unset !important;
+
+                &-picture {
+                    position: unset !important;
+                    width: unset !important;
+                    height: 241px;
+
+                    h5 {
+                        font-size: 32px !important;
+                        letter-spacing: 1.28px !important;
+                        // line-height: 72px!important;
+                    }
+
+                    &-description {
+                        position: unset !important;
+                    }
+                }
+
+                &-info {
+                    position: unset !important;
+                    margin-left: unset !important;
+                    padding-top: 61px;
+
+                    &-title {
+                        h5 {
+                            font-size: 16px !important;
+                            letter-spacing: 1.28px !important;
+                            // line-height: 40px !important;
+                        }
+                    }
+
+                    &-description {
+                        p {
+                            font-size: 16px !important;
+                            letter-spacing: 1.28px !important;
+                            // line-height: 28px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 500px) {
+            padding-inline: 18px;
+        }
+    }
+}

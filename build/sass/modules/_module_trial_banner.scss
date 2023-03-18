@@ -1,0 +1,232 @@
+.trial-banner {
+  position: relative;
+  margin: 0 50px 120px 40px;
+
+  &__aq {
+    min-height: 122px;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    top: 190px;
+    z-index: 1;
+
+    h2 {
+      margin-bottom: 0;
+      font-family: "SourceHanSans-Bold";
+      font-size: 54px;
+      letter-spacing: 2.16px;
+      line-height: 72px;
+
+      &.trial-crass {
+        font-size: 100px;
+        letter-spacing: 0px;
+        line-height: 124px;
+        color: #f4f4f4;
+      }
+
+      &.trial-crass-jp {
+        margin-top: -130px;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 813px;
+    opacity: 0.5;
+  }
+
+  &__text {
+    margin-top: -100px;
+
+    .text-wrapper {
+      position: relative;
+      left: 80px;
+      width: fit-content;
+      p {
+        position: relative;
+        z-index: 1;
+        font-family: "SourceHanSans-Bold";
+        font-size: 32px;
+        letter-spacing: 1.28px;
+        line-height: 72px;
+
+        &:nth-child(1) {
+          margin-bottom: -5px !important;
+        }
+
+        &:nth-child(2) {
+          margin-left: 56px;
+        }
+
+        .text-hl {
+          font-family: "SourceHanSans-Heavy";
+          color: #0049bd;
+          font-size: 54px;
+          letter-spacing: 2.16px;
+          line-height: 72px;
+
+          .text-unit {
+            font-size: 32px;
+            letter-spacing: 1.28px;
+            line-height: 72px;
+          }
+        }
+      }
+      img {
+        position: absolute;
+        top: 28px;
+        left: 50%;
+        transform: translateX(-49%);
+        z-index: 0;
+      }
+    }
+    .analysis-wrapper {
+      position: relative;
+      top: -10px;
+      p {
+        position: absolute;
+        font-size: 100px;
+        letter-spacing: 0px;
+        line-height: 124px;
+        color: #f4f4f4;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 0;
+      }
+      .img-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 293px;
+        z-index: 1;
+        left: 300px;
+
+        img {
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+        }
+      }
+    }
+  }
+
+  &__recommend {
+    width: 100%;
+    max-width: 381px;
+    position: absolute;
+    right: 0;
+    bottom: 29px;
+  }
+
+  @media (max-width: 1024px) {
+    margin: 0 18px 120px;
+
+    &__text {
+      margin-top: -10vw;
+      .text-wrapper {
+        left: -18px;
+      }
+      .analysis-wrapper {
+        .img-wrapper {
+          left: 10%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__aq {
+      position: unset;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      min-height: 80px;
+
+      h2 {
+        font-size: 32px;
+        letter-spacing: 0.64px;
+        line-height: 46px;
+
+        &.trial-crass {
+          font-size: 56px;
+          letter-spacing: 0px;
+          line-height: 68px;
+          margin-left: 73px;
+          white-space: nowrap;
+        }
+
+        &.trial-crass-jp {
+          margin-top: -80px;
+        }
+      }
+    }
+
+    &__image {
+      padding-right: 55px;
+    }
+
+    &__text {
+      margin-top: 6px;
+
+      .text-wrapper {
+        left: 0;
+
+        p {
+          font-size: 24px;
+          letter-spacing: 0.96px;
+          line-height: 35px;
+
+          &:nth-child(2) {
+            margin-left: 34px;
+          }
+
+          &:nth-child(1) {
+            margin-bottom: -0px !important;
+          }
+
+          .text-hl {
+            font-size: 32px;
+            letter-spacing: 1.28px;
+            line-height: 46px;
+
+            .text-unit {
+              font-size: 24px;
+              letter-spacing: 0.96px;
+              line-height: 46px;
+            }
+          }
+        }
+        img {
+          left: -80px;
+          width: 375px;
+          max-width: unset;
+          height: auto;
+          transform: translateY(-50%);
+        }
+      }
+      .analysis-wrapper {
+        top: 0;
+      }
+    }
+
+    &__recommend {
+      max-width: 45vw;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__text {
+      .analysis-wrapper {
+        .img-wrapper {
+          max-width: 277px;
+          left: unset;
+          margin: 0 0 0 auto;
+        }
+      }
+    }
+
+    &__recommend {
+      max-width: 116px;
+      bottom: unset;
+      top: 180px;
+    }
+  }
+}

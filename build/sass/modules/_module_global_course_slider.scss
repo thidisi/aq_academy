@@ -1,0 +1,254 @@
+.course-slider {
+  position: relative;
+  background: #f4f4f4;
+
+  &__header {
+    padding-top: 40px;
+    width: 100%;
+    text-align: right;
+
+    h2 {
+      font-size: 100px;
+      letter-spacing: 4px;
+      line-height: 124px;
+      color: #fff;
+      margin-bottom: 0;
+    }
+  }
+
+  &__slider-wrapper {
+    padding: 25px 0 185px 40px;
+    position: relative;
+
+    .slick-list {
+      height: 100%;
+      max-height: 380px;
+    }
+
+    .slick-dots {
+      position: absolute;
+      bottom: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .slider-item {
+      position: relative;
+      display: flex !important;
+      width: 100%;
+      max-width: 1147px;
+      margin: 0 40px;
+      cursor: grab;
+      user-select: none;
+
+      &:active {
+        cursor: grabbing;
+      }
+
+      .a-unset {
+        all: unset;
+      }
+
+      &__image {
+        width: 100%;
+        max-width: 504px;
+        text-align: center;
+
+        .number {
+          font-size: 72px;
+          letter-spacing: 5.76px;
+          line-height: 50px;
+          margin-bottom: -10px;
+        }
+
+        img {
+          margin-top: -40px;
+          object-fit: contain;
+        }
+      }
+
+      &__content {
+        margin-left: 56px;
+        margin-top: 50px;
+
+        .course-label {
+          margin-left: -80px;
+          margin-bottom: 25px;
+          font-size: 20px;
+          letter-spacing: 0.8px;
+          line-height: 30px;
+          border-bottom: 3px solid #000;
+          width: fit-content;
+        }
+
+        .course-header {
+          margin-bottom: 25px;
+
+          h2 {
+            font-family: "SourceHanSans-Bold";
+            font-size: 30px;
+            letter-spacing: 2.4px;
+            line-height: 40px;
+            margin-bottom: 0;
+          }
+        }
+
+        .course-description {
+          margin-bottom: 40px;
+
+          p {
+            font-family: "SourceHanSans-Regular";
+            font-size: 14px;
+            letter-spacing: 1.12px;
+            line-height: 24px;
+          }
+        }
+
+        .btn-more {
+          background: #fff;
+        }
+      }
+
+      &.reverse {
+        flex-direction: row-reverse;
+
+        .slider-item__image {
+          margin-left: 94px;
+          margin-right: 0;
+        }
+
+        .slider-item__content {
+          margin-left: 0;
+
+          .course-label {
+            margin-left: auto;
+            margin-right: -225px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__slider-wrapper {
+      padding: 25px 18px 126px;
+
+      .slider-item {
+        max-width: calc(100vw - 36px);
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__slider-wrapper {
+      .slick-dots {
+        bottom: 72px;
+      }
+
+      .slider-item {
+        max-width: calc(100vw - 80px);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__header {
+      padding-top: 0;
+
+      h2 {
+        font-size: 72px;
+        letter-spacing: 2.88px;
+        line-height: 50px;
+      }
+    }
+
+    &__slider-wrapper {
+      .slick-list {
+        height: 100%;
+        max-height: 100%;
+      }
+
+      .slider-item {
+        flex-direction: column;
+        margin: 0px 1px;
+        max-width: calc(100vw - 36px);
+
+        &.reverse {
+          flex-direction: column;
+
+          .slider-item__image {
+            margin: 0;
+          }
+
+          .slider-item__content {
+            margin: 0;
+          }
+        }
+
+        &__image {
+          max-width: 274px;
+          display: flex;
+          flex-direction: row-reverse;
+          position: relative;
+
+          .number {
+            margin-bottom: 0;
+            margin-left: -60px;
+            z-index: 0;
+            height: fit-content;
+            margin-top: 25%;
+            transform: translateY(-50%);
+          }
+
+          img {
+            margin-top: 0;
+            width: 100%;
+            max-width: 226px;
+            height: 100%;
+            z-index: 1;
+          }
+        }
+
+        &__content {
+          margin-top: 16px;
+          margin-left: 0;
+
+          .course-label {
+            margin: 16px 0 !important;
+          }
+
+          .course-header {
+            margin-bottom: 16px;
+
+            h2 {
+              font-size: 24px;
+              letter-spacing: 1.92px;
+            }
+          }
+
+          .course-description {
+            margin-bottom: 32px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 390px) {
+    &__slider-wrapper {
+      .slider-item {
+        &__content {
+          .btn-more {
+            width: calc(100% - 7px);
+            a {
+              padding: unset;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

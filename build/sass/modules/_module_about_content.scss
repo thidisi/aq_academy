@@ -1,0 +1,244 @@
+.wp-about-page {
+    .content {
+        margin-top: 160px;
+        font-family: "SourceHanSans";
+
+        .content-top {
+            display: flex;
+            justify-content: space-between;
+
+            .item {
+                padding-left: 80px;
+                position: relative;
+                z-index: 1;
+
+                hr.line {
+                    content: "";
+                    border-top: 5px solid #354FAD;
+                    border-bottom: 0;
+                    width: 63px;
+                    opacity: 1;
+                    margin-top: 32px;
+                    margin-bottom: 32px;
+                }
+
+                h2 {
+                    font-size: 32px;
+                    letter-spacing: 1.28px;
+                    line-height: 46px;
+                    font-family: 'SourceHanSans-bold';
+                    margin-top: 61px;
+                }
+
+                h3 {
+                    font-size: 16px;
+                    letter-spacing: 1.28px;
+                    line-height: 24px;
+                    font-family: 'SourceHanSans-bold';
+                    margin-bottom: 24px;
+                }
+
+                p {
+                    font-size: 16px;
+                    letter-spacing: 1.28px;
+                    line-height: 32px;
+                }
+
+                .image {
+                    margin-bottom: 40px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &.item-left {
+                    max-width: 484px;
+                    padding-right: 36px;
+
+                    .style {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 100px;
+                        line-height: 122px;
+                        font-family: 'Montserrat-bold';
+                        letter-spacing: 4px;
+                        color: #f4f4f4;
+                        z-index: -1;
+                    }
+                }
+
+                &.item-right {
+                    margin-top: 61px;
+                    width: 810px;
+                    margin-left: 36px;
+                    background: #F8F8F8;
+
+                    h2 {
+                        font-size: 24px;
+                        letter-spacing: 0.96px;
+                        line-height: 35px;
+                        color: #354FAD;
+                        margin: 0;
+                        font-family: 'SourceHanSans-bold';
+                        margin-bottom: 16px;
+                    }
+
+                    .item-introduce {
+
+                        &:last-child {
+                            margin-bottom: 80px;
+                        }
+
+                        margin-bottom: 32px;
+
+                        div {
+                            max-width: 619px;
+                            margin: auto;
+                        }
+
+                        ul {
+                            margin-top: 0;
+                            font-size: 16px;
+                            letter-spacing: 1.28px;
+                            line-height: 32px;
+                            border-left: 2px solid #C2C2C2;
+                            border-bottom: 2px solid #C2C2C2;
+                            padding-left: 30px;
+                            margin-left: 20px;
+                            margin-right: 45px;
+                            border-radius: 4px;
+                            padding-bottom: 10px;
+                            margin-bottom: 20px;
+                            font-family: 'SourceHanSans-normal';
+
+                            li {
+                                list-style-type: disc !important;
+                            }
+                        }
+                    }
+
+                    .image {
+                        margin: 48px auto;
+                        max-width: 524px;
+
+                        img {
+                            width: fit-content;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content-img {
+            padding: 120px 80px 140px 80px;
+
+            .image {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 990px) {
+        .content {
+            margin-top: 100px !important;
+            margin-left: 18px;
+            margin-right: 18px;
+
+            .content-top {
+                display: block;
+
+                .item.item-left {
+                    padding: 0 !important;
+                    .style {
+                        font-size: 100px  !important;
+                        line-height: 122px !important;
+                        letter-spacing: 4px !important;
+                        left: 0 !important;
+                        top: -61px !important;
+                    }
+
+                    h2{
+                        font-size: 32px !important;
+                        line-height: 46px !important;
+                        letter-spacing: 1.28px!important;
+                    }
+
+                    hr{
+                        width: 40px !important;
+                        margin-bottom: 40px !important;
+
+                    }
+
+                    .image {
+                        margin-bottom: 64px !important;
+                    }
+
+                    h3{
+                        font-size: 18px !important;
+                        line-height: 26px!important;
+                        letter-spacing: 1.44px!important;
+                        margin-bottom: 24px !important;
+                    }
+
+                    p{
+                        line-height: 28px !important;    
+                    }
+                }
+
+                .item.item-right {
+                    width: calc(100% + 18px) !important;
+                    margin-top: 32px !important;
+                    margin-left: auto !important;
+
+                    .image{
+                        margin: 0 !important;
+                        min-width: 337px !important;
+                        padding: 40px 17px 32px 18px !important;
+                    }
+
+                    h2{
+                     font-size: 24px!important;  
+                     line-height: 35px !important;
+                     letter-spacing: 0.96px!important;
+                    }
+
+                    .item-introduce {
+                        margin-left: 16px;
+
+                        &:last-child {
+                            padding-bottom: 48px !important;
+                            margin-bottom: 0 !important;
+                        }
+
+                        ul{
+                            li{
+                                &:not(:last-child){
+                                    margin-bottom: 16px !important;
+                                }
+                                &:last-child{
+                                    margin-bottom: 6px !important;
+                                }
+                                line-height: 24px !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content-img {
+                padding: 0px !important;
+                margin: 40px 0px 48px 0px !important;
+
+                .image{
+                    position: relative;
+                    left: -18px;
+                    min-width: calc(100% + 36px) !important;
+                }
+            }
+        }
+    }
+}

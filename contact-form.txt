@@ -1,0 +1,95 @@
+<div class="contact-body">
+<div class="contact-body-container m-auto">
+<div class="form-group display-input">
+<span class="require-field">必須</span>
+<label class="form-field">お問い合わせ種類</label>
+<div class="form-body">
+[select* inquiry-type id:require-type class:input class:s-input include_blank "無料体験授業" "資料請求"]
+</div>
+</div>
+<div class="form-group display-input">
+<span class="require-field">必須</span>
+<label class="form-field">ご希望の教室</label>
+<div class="form-body">
+[select* desired-classroom id:desired-class class:input class:s-input include_blank "新所沢校" "狭山ヶ丘校"]
+</div>
+</div>
+<div class="form-group display-input">
+<span class="require-field">必須</span>
+<label class="form-field">お子様氏名</label>
+<div class="form-body">
+[text* child-name id:name class:input placeholder "例）山田 太郎"]
+</div>
+</div>
+<div class="form-group display-input">
+<span class="require-field">必須</span>
+<label class="form-field">フリガナ</label>
+<div class="form-body">
+[text* furigana id:furigana class:input placeholder "例）ヤマダ タロウ"]
+</div>
+</div>
+<div class="form-group display-input">
+<span class="require-field">必須</span>
+<label class="form-field">申込者</label>
+<div class="form-body">
+[select* applicant id:applicant class:input class:s-input include_blank "お子様" "保護者様"]
+</div>
+</div>
+<div class="form-group display-input">
+<span class="require-field">必須</span>
+<label class="form-field">メールアドレス</label>
+<div class="form-body">
+[email* email id:email class:input placeholder "例）mail@example.com"]
+</div>
+</div>
+<div class="form-group display-input">
+<span class="require-field">必須</span>
+<label class="form-field">電話番号</label>
+<div class="form-body">
+[tel* phone id:phone class:input placeholder "例）080-1234-5678"]
+</div>
+</div>
+<div class="form-group display-input">
+<label class="form-field no-require">住所</label>
+<div class="form-body">
+[text address id:address class:input placeholder "例）群馬県館林市xxx 1-2-3"]
+</div>
+</div>
+<div class="form-group display-input">
+<label class="form-field no-require"><span>AQ</span>学院を知ったきっかけ</label>
+<div class="form-body">
+[select source id:source class:input class:s-input include_blank "チラシ" "ホームページ" "校舎前を通行" "友だちが通塾" "その他"]
+</div>
+</div>
+<div class="form-group display-textarea">
+<label class="form-field">お問い合わせ内容</label>
+[textarea content id:content class:textarea-input placeholder "お問い合わせの詳細をご記入ください。"]
+</div>
+<div class="form-footer">
+<div class="note-info">
+<div name="" id="" cols="30" rows="20" class="w-100 textarea-info">
+<p class="info-content">・お問い合わせにつきましては、順次対応させていただいております。質問によっては回答までに1週間程度お時間を頂戴する場合やお電話でのご対応をお願いすることがございます。Eメールでの回答は、お問い合わせいただいたお客さまの特定のご質問にお答えするものです。当社の許可なく、回答内容の一部分もしくは全体を転用、二次利用し、また当該お客さま以外に開示することは固くお断りいたします。</p>
+<p class="info-content">・お客さまのメール設定で、着信制御をされている場合、当社からの返信が届かない場合がございます。あらかじめご了承ください。</p>
+<p class="info-content">・お問い合わせいただきましたお客さまの個人情報は、以下の目的のために利用いたします。</p>
+<p class="info-content">お問い合わせに対する対応・回答のため</p>
+<p class="info-content">お問い合わせに対する対応・回答のために必要なお客さまとの連携・コミュニケーションのため</p>
+<p class="info-content">・お問い合わせ内容によっては、お問い合わせ内容に関連のある社内の担当者より回答させていただく場合があります。あらかじめご了承ください。</p>
+<p class="info-content">・お電話でお答えする場合もございますので、あらかじめご了承ください。</p>
+<p class="info-content">・なお、個人情報の取り扱いにつきましては、プライバシーポリシーをご覧ください。</p>
+</div>
+</div>
+<div class="confirm m-auto">
+<h5>
+上記の内容に同意いただけましたら、下記の項目を入力し、
+「同意する」にチェックをつけて送信してください。
+</h5>
+</div>
+<div class="confirm-checkbox m-auto">
+[checkbox* confirm use_label_element exclusive id:confirm "個人情報のお取り扱いについて同意する"]
+</div>
+<div class="confirm-button m-auto">
+[submit class:w-100 class:h-100 "送信"]
+</div>
+</div>
+</div>
+</div>

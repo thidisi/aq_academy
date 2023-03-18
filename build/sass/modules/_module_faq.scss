@@ -1,0 +1,105 @@
+@mixin icon-minus() {
+    width: 24px;
+    display: inline-block;
+    border-top: 3px solid;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+}
+
+.c-box__faq {
+    background: #F6F6F6;
+    .c-item {
+        border: 1px solid #141934;
+        margin-bottom: 16px;
+    }
+
+    .c-btn-collapse {
+        color: #141934;
+        font-size: 18px;
+        font-family: "SourceHanSans-Bold";
+        padding-right: 20px;
+        display: flex;
+        // align-items: center;
+
+        &.collapsed {
+            .c-minus {
+                display: inline-block;
+            }
+
+            .c-plus {
+                display: none;
+            }
+        }
+
+        .c-minus {
+            display: none;
+        }
+    }
+
+    .c-title-q {
+        color: #aaaaaa;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        margin-top: 9px;
+        img {
+            max-width: none !important;
+        }
+    }
+    .c-title {
+        margin-top: 12px; 
+        margin-bottom: 12px;
+        margin-right: 23px;
+    }
+
+    .item-answer{
+        margin-top: 12px;
+        margin-bottom: 64px;
+    }
+
+    .c-answer {
+
+        font-family: "SourceHanSans-Medium";
+        letter-spacing: 1px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .c-plus {
+        @include icon-minus();
+    }
+
+    .c-minus {
+        @include icon-minus();
+
+        &::before {
+            content: "";
+            @include icon-minus();
+            top: -3px;
+            right: 0px !important;
+            -o-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .c-item {
+            padding: 15px;
+
+            .c-title-q {
+                // force text wrapping
+                white-space: normal;
+            }
+        }
+
+        .card-body {
+            flex-wrap: nowrap;
+            align-items: flex-start !important;
+        }
+    }
+}

@@ -1,0 +1,417 @@
+// CONTACT FORM
+
+.contact {
+  background-color: #f6f6f6;
+  // min-width: 390px;
+  min-height: 2020px;
+
+  .wpcf7-response-output {
+    position: fixed;
+    display: none;
+    bottom: 67px;
+    right: 0;
+    z-index: 9999;
+    width: 95%;
+    max-width: 400px;
+    margin: 0;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #000;
+    background-color: rgb(255, 255, 255);
+    padding: 0.2em 30px 0.2em 10px !important;
+    margin: 2em 0.5em 2em !important;
+
+    @media (max-width: 768px) {
+      bottom: 0;
+    }
+
+    @media (max-width: 400px) {
+      max-width: 100%;
+    }
+
+    &.show {
+      display: block !important;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    // close button
+    &__close {
+      position: absolute;
+      right: 18px;
+      width: 15px;
+      height: 15px;
+      padding: 0;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      outline: none;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &:before,
+      &:after {
+        position: absolute;
+        left: 15px;
+        content: " ";
+        height: 15px;
+        width: 2px;
+        background-color: #000;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &-header {
+    position: relative;
+
+    &__content1 {
+      position: absolute;
+      top: 80px;
+      right: 96px;
+
+      h5 {
+        margin: 0;
+        font-family: "Montserrat-Bold";
+        font-size: 100px;
+        letter-spacing: 4px;
+        /* line-height: 24px; */
+        color: #ffffff;
+        text-align: right;
+        text-transform: uppercase;
+      }
+    }
+
+    &__content2 {
+      position: relative;
+      padding-top: 123px;
+      max-width: 334px;
+
+      h5 {
+        margin: 0;
+        font-family: "SourceHanSans-Bold";
+        font-size: 54px;
+        letter-spacing: 2.16px;
+        line-height: 72px;
+        white-space: nowrap;
+      }
+    }
+
+    &__content3 {
+      position: relative;
+      padding-top: 24px;
+      display: flex;
+      max-width: 379px;
+
+      h5 {
+        margin: 0;
+        font-family: "SourceHanSans-Medium";
+        font-size: 16px;
+        letter-spacing: 1.28px;
+        line-height: 24px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &-body {
+    padding-top: 80px;
+    padding-bottom: 160px;
+
+    &-container {
+      width: 738px;
+    }
+
+    .display-input {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+
+    .form-group {
+      margin-bottom: 40px;
+
+      .require-field {
+        font-family: "SourceHanSans-Bold";
+        font-size: 13px;
+        letter-spacing: 1.3px;
+        line-height: 19px;
+        background-color: #d40301;
+        padding: 1px 17px;
+        border-radius: 5px;
+        width: 61px;
+        height: 21px;
+        margin-right: 16px;
+        white-space: nowrap;
+        color: #ffffff;
+      }
+
+      .form-field {
+        font-family: "SourceHanSans-Bold";
+        font-size: 16px;
+        letter-spacing: 1.28px;
+        line-height: 24px;
+        color: #555555;
+        width: 245px;
+
+        span {
+          font-family: "Raleway-Bold";
+          font-size: 16px;
+          letter-spacing: 1.28px;
+          line-height: 18px;
+        }
+      }
+
+      .form-body {
+        width: 416px;
+
+        .input {
+          width: 100%;
+          height: 43px;
+          font-family: "SourceHanSans-Medium";
+          font-size: 16px;
+          letter-spacing: 1.6px;
+          color: #1f1f1f;
+          padding-left: 13px;
+          border: none;
+        }
+
+        .s-input {
+          appearance: none;
+          background-image: url("/wp-content/themes/aq-academy/dist/images/contact/arrow_select.svg");
+          background-repeat: no-repeat;
+          background-position: right 0.7rem top 50%;
+          background-size: 0.65rem auto;
+          background-color: white;
+        }
+      }
+    }
+
+    .display-textarea {
+      margin-left: 79px;
+
+      .textarea-input {
+        width: 661px;
+        height: 196px;
+        resize: none;
+        margin-top: 8px;
+        padding-inline: 16px;
+        padding-top: 8px;
+        border: none;
+      }
+    }
+
+    .form-footer {
+      margin-left: 79px;
+
+      .note-info {
+        height: 100%;
+        width: 661px;
+        margin-bottom: 32px;
+
+        .textarea-info {
+          font-family: "SourceHanSans-Medium";
+          font-size: 13px;
+          letter-spacing: 1.04px;
+          line-height: 19px;
+          padding-top: 12px;
+          padding-inline: 12px;
+          max-height: 290px;
+          overflow-y: scroll;
+          border: 0.5px solid #707070;
+
+          p {
+            margin-bottom: 1rem !important;
+            color: #555555;
+          }
+        }
+      }
+
+      .confirm {
+        height: 38px;
+        max-width: 410px;
+        margin-bottom: 32px !important;
+
+        h5 {
+          font-family: "SourceHanSans-Bold";
+          font-size: 14px;
+          letter-spacing: 1.12px;
+          line-height: 18px;
+          text-align: center;
+        }
+      }
+
+      .confirm-checkbox {
+        height: 24px;
+        max-width: 304px;
+        margin-bottom: 48px !important;
+        display: flex;
+        align-items: center;
+
+        input[type="checkbox"] {
+          height: 24px;
+          width: 24px;
+          margin-right: 8px;
+        }
+
+        label {
+          font-family: "SourceHanSans-Bold";
+          font-size: 14px;
+          letter-spacing: 1.12px;
+          line-height: 20px;
+          white-space: nowrap;
+        }
+      }
+
+      .confirm-button {
+        position: relative;
+        max-width: 560px;
+        height: 60px;
+
+        input {
+          background-color: #ffffff;
+          font-family: "SourceHanSans-Bold";
+          font-size: 16px;
+          letter-spacing: 3.04px;
+          line-height: 24px;
+          color: black;
+        }
+
+        &::before {
+          content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='21' viewBox='0 0 15 21'%3E%3Ctext id='_' data-name='〉' transform='translate(0 17)' fill='%23141934' font-size='15' font-family='NotoSansJP-Regular, Noto Sans JP'%3E%3Ctspan x='0' y='0'%3E〉%3C/tspan%3E%3C/text%3E%3C/svg%3E%0A");
+          position: absolute;
+          right: 4px;
+          top: calc(50% + 3px);
+          transform: translateY(-50%);
+        }
+
+        &:hover {
+          input {
+            background-color: #141934;
+            color: #ffffff;
+          }
+
+          &::before {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='21' viewBox='0 0 15 21'%3E%3Ctext id='_' data-name='〉' transform='translate(0 17)' fill='%23f3f5ff' font-size='15' font-family='NotoSansJP-Regular, Noto Sans JP'%3E%3Ctspan x='0' y='0'%3E〉%3C/tspan%3E%3C/text%3E%3C/svg%3E%0A");
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+
+    &-body {
+
+      &-container {
+        width: unset !important;
+        padding-inline: 40px;
+      }
+    }
+
+    .display-input {
+      display: block;
+    }
+
+    .display-textarea {
+      .textarea-input {
+        width: 100%;
+      }
+    }
+
+    .form-body {
+      margin-left: 79px;
+      margin-bottom: 15px;
+      width: unset !important;
+    }
+
+    .form-group {
+      .no-require {
+        margin-left: 79px;
+      }
+
+      .form-field {
+        padding-bottom: 7px;
+      }
+    }
+
+    .form-footer {
+      .note-info {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 680px) {
+    &-header {
+      &__content1 {
+        left: 19px;
+      }
+    }
+  }
+
+  @media (max-width: 468px) {
+    &-header {
+      &__content1 {
+        top: 41px;
+
+        h5 {
+          font-size: 56px;
+          letter-spacing: 0px;
+          line-height: 68px;
+          text-transform: capitalize;
+          text-align: left;
+        }
+      }
+
+      &__content2 {
+        padding-top: 29px;
+        margin-left: 19px !important;
+
+        h5 {
+          font-family: "SourceHanSans-Bold";
+          font-size: 32px;
+          letter-spacing: 0.64px;
+          line-height: 46px;
+        }
+      }
+
+      &__content3 {
+        padding-top: 15px;
+        margin-left: 19px !important;
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: 432px) {
+    &-body {
+      &-container {
+        width: unset !important;
+        padding-inline: 19px;
+      }
+
+      .form-group {
+        .form-body {
+          margin-left: unset;
+        }
+      }
+
+      .display-textarea {
+        margin-left: unset;
+      }
+
+      .form-footer {
+        margin-left: unset;
+      }
+    }
+  }
+}

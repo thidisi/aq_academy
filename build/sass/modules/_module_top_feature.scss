@@ -1,0 +1,335 @@
+.top-feature {
+  position: relative;
+  height: 1395px;
+
+  &__cut {
+    .pc-top {
+      display: block;
+      img {
+        width: fit-content;
+        height: fit-content;
+        &.cut-1,
+        &.cut-2,
+        &.cut-3 {
+          position: absolute;
+        }
+        &.cut-1 {
+          top: -145px;
+          right: 35%;
+        }
+
+        &.cut-2 {
+          top: 350px;
+          right: 9%;
+        }
+
+        &.cut-3 {
+          top: 470px;
+          right: 31%;
+        }
+      }
+    }
+  }
+
+  &__header {
+    margin-top: 40px;
+    h2 {
+      font-size: 100px;
+      letter-spacing: 4px;
+      line-height: 124px;
+      color: #f4f4f4;
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    .content-wrapper {
+      position: absolute;
+      .feature-content {
+        position: relative;
+        width: 100%;
+
+        .sp-top {
+          display: none;
+        }
+
+        .content-image {
+          position: relative;
+          z-index: 0;
+          width: 100%;
+          opacity: 0.4;
+        }
+
+        .content-detail {
+          position: relative;
+          z-index: 1;
+          margin-top: -20px;
+
+          &__header {
+            margin-bottom: 24px;
+
+            h3 {
+              font-family: "SourceHanSans-Bold";
+              font-size: 32px;
+              letter-spacing: 2.56px;
+              line-height: 40px;
+              margin-bottom: 0;
+            }
+          }
+
+          &__description {
+            font-family: "SourceHanSans-Medium";
+            font-size: 14px;
+            letter-spacing: 1.12px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      &.content-1 {
+        right: 80px;
+        top: 110px;
+        .feature-content {
+          max-width: 683px;
+
+          .content-image {
+            max-width: 643px;
+            margin: 0 0 0 auto;
+          }
+        }
+
+        .content-detail {
+          &__description {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+
+      &.content-2 {
+        left: 80px;
+        top: calc(110px + 100px);
+
+        .feature-content {
+          max-width: 753px;
+
+          .content-image {
+            max-width: 380px;
+            margin: 0 auto 0 0;
+          }
+
+          .content-detail {
+            width: 100%;
+            max-width: 689px;
+            margin: 0 0 0 auto;
+            &__description {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+
+      &.content-3 {
+        right: 80px;
+        top: calc(124px + 463px);
+        .feature-content {
+          max-width: 746px;
+
+          .content-image {
+            max-width: 380px;
+            margin: 0 0 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    height: auto;
+
+    &__cut {
+      .pc-top {
+        display: none;
+      }
+    }
+
+    &__content {
+      .content-wrapper {
+        position: unset;
+        padding: 0 18px;
+        margin-bottom: 95px;
+        .feature-content {
+          margin: auto;
+          // max-width: calc(100% - 160px) ;
+          // max-width: 100% !important;
+          position: relative;
+
+          .sp-top {
+            display: block;
+            text-align: center;
+            margin: -60px 0 -25px;
+
+            img {
+              height: 80px;
+
+              &.cut-1 {
+                height: 100px;
+              }
+            }
+          }
+
+          .content-image {
+            margin: 0 auto 24px 0 !important;
+            max-width: 100% !important;
+            height: 456px;
+          }
+
+          .content-detail {
+            margin: 0 0 auto !important;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1220px) {
+    &__cut {
+      .pc-top {
+        display: block;
+        img {
+          width: fit-content;
+          height: fit-content;
+          &.cut-1,
+          &.cut-2,
+          &.cut-3 {
+            position: absolute;
+          }
+          &.cut-1 {
+            top: -145px;
+            right: 26%;
+          }
+
+          &.cut-2 {
+            top: 350px;
+            right: 13%;
+          }
+
+          &.cut-3 {
+            top: 470px;
+            right: 27%;
+          }
+        }
+      }
+    }
+    &__content {
+      .content-wrapper {
+        &.content-1 {
+          .feature-content {
+            max-width: 536px;
+
+            .content-image {
+              max-width: 498px;
+              margin: 0 0 0 auto;
+            }
+          }
+        }
+
+        &.content-2 {
+          .feature-content {
+            max-width: 490px;
+
+            .content-image {
+              max-width: 318px;
+              margin: 0 auto 0 0;
+            }
+          }
+        }
+
+        &.content-3 {
+          .feature-content {
+            max-width: 660px;
+
+            .content-image {
+              max-width: 380px;
+              margin: 0 0 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    &__header {
+      margin-top: 16px;
+
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    &__header {
+      margin-top: 16px;
+
+      h2 {
+        font-size: 72px;
+        letter-spacing: 2.88px;
+        line-height: 96px;
+        text-align: center;
+      }
+    }
+
+    &__content {
+      .content-wrapper {
+        .feature-content {
+          .sp-top {
+            margin: -50px 0 -20px;
+          }
+          .content-image {
+            max-width: 100% !important;
+            height: 456px;
+          }
+          .content-detail {
+            max-width: 100% !important;
+
+            &__header {
+              margin-bottom: 12px;
+
+              h3 {
+                font-size: 18px;
+                letter-spacing: 0.72px;
+                line-height: 28px;
+              }
+            }
+
+            &__description {
+              font-family: "SourceHanSans-Regular";
+              font-size: 16px;
+              letter-spacing: 1.28px;
+              line-height: 24px;
+            }
+          }
+        }
+
+        &.content-1 {
+          .content-image {
+            height: auto;
+          }
+          .content-detail {
+            &__description {
+              display: unset !important;
+            }
+          }
+        }
+
+        &.content-2 {
+          .content-detail {
+            &__description {
+              display: unset !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

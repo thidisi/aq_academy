@@ -1,0 +1,449 @@
+.banner-trial-crass {
+    height: 400px;
+
+    position: relative;
+
+    @media (min-width: 668px) and (max-width: 935px) {
+        height: 500px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: calc(100% - 32px);
+        height: calc(100% - 32px);
+        top: 0;
+        border: 1px solid #1D2088;
+        margin: 16px;
+        z-index: 1;
+    }
+
+    .trial-crass__content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%;
+
+        .trial-crass__about--box {
+            height: 50%;
+            width: 100%;
+            position: relative;
+            background-color: #F4F4F4;
+            z-index: 1;
+
+            @media (min-width: 935px) {
+                width: 453px;
+                height: 100%;
+            }
+
+            .trial-crass__about--title {
+                span {
+                    position: absolute;
+                    line-height: 100px;
+                    right: 2px;
+                    bottom: 12px;
+                    font-size: 72px;
+                    line-height: 60px;
+                    font-family: "Montserrat-Bold", sans-serif;
+                    color: #ffffff;
+
+                    @media (min-width: 668px) {
+                        right: 22px;
+                        font-size: 120px;
+                        letter-spacing: -1.12px;
+                        line-height: 100px;
+                    }
+
+                    @media (min-width: 935px) {
+                        top: 82px;
+                        left: 32px;
+                        right: auto;
+                        bottom: auto;
+                        font-size: 160px;
+                        letter-spacing: -1.6px;
+                        line-height: 140px;
+                    }
+                }
+            }
+
+            .trial-crass__about--image {
+                position: absolute;
+                z-index: 2;
+                max-width: 180px;
+                height: 181px;
+                top: 36px;
+                left: 36px;
+
+                @media (min-width: 668px) {
+                    max-width: 212px;
+                    height: 212px;
+                    top: 62px;
+                    left: 62px;
+                }
+
+                @media (min-width: 935px) {
+                    max-width: 309px;
+                    height: 309px;
+                    right: -46px;
+                    bottom: 45px;
+                    top: auto;
+                    left: auto;
+                }
+            }
+        }
+
+        .trial-crass__about-text {
+            background-color: #BEBEBE;
+            height: 50%;
+            z-index: 1;
+            width: 100%;
+
+            @media (min-width: 935px) {
+                flex: 1;
+                height: 100%;
+            }
+
+            div {
+                position: relative;
+                margin-top: 40px;
+                margin-left: auto;
+                margin-bottom: auto;
+                margin-right: auto;
+                max-width: 282px;
+
+                @media (min-width: 668px) {
+                    max-width: 423px;
+                }
+
+                @media (min-width: 935px) {
+                    margin-top: 128px;
+                    margin-left: 59px;
+                    margin-bottom: 119px;
+                    margin-right: auto;
+                }
+
+                @media (min-width: 976px) {
+                    margin-left: 86px;
+                }
+
+                h3 {
+                    font-family: "SourceHanSans-Bold", sans-serif;
+                    font-size: 24px;
+                    line-height: 35px;
+                    margin-bottom: 16px;
+
+                    @media (min-width: 668px) {
+                        font-size: 32px;
+                        line-height: 46px;
+                        margin-bottom: 32px;
+                    }
+                }
+
+                h4 {
+                    font-family: "SourceHanSans-Medium", sans-serif;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 0;
+
+                    @media (min-width: 668px) {
+                        font-size: 24px;
+                        line-height: 40px;
+                    }
+                }
+
+                span {
+                    display: none;
+                    position: absolute;
+                    bottom: 63px;
+                    right: 48px;
+                    font-family: "SourceHanSans-Medium", sans-serif;
+                    font-size: 24px;
+                    line-height: 40px;
+
+                    @media (min-width: 935px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .trial-crass__annlysis {
+        display: none;
+    }
+
+    // Analysis Report
+    &.banner-analysis {
+        height: 260px;
+
+        @media (min-width: 368px) {
+            height: 300px;
+        }
+
+        @media (min-width: 618px) {
+            height: 340px;
+        }
+
+        @media (min-width: 999px) {
+            height: 380px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: calc(100% - 32px);
+            height: calc(100% - 32px);
+            top: 0;
+            border: 1px solid #ffffff;
+            margin: 16px;
+
+            @media (min-width: 618px) {
+                width: calc(100% - 40px);
+                height: calc(100% - 40px);
+                margin: 20px;
+            }
+
+            @media (min-width: 999px) {
+                width: calc(100% - 80px);
+                height: calc(100% - 80px);
+                margin: 40px;
+            }
+        }
+
+        .trial-crass__content {
+            .trial-crass__annlysis {
+                display: block;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 62px;
+                font-family: "SourceHanSans-Bold", sans-serif;
+                z-index: 2;
+
+                @media (min-width: 478px) {
+                    bottom: 42px;
+                }
+
+                @media (min-width: 618px) {
+                    bottom: 68px;
+                }
+
+                @media (min-width: 999px) {
+                    top: 125px;
+                    left: 397px;
+                    bottom: auto;
+                    max-width: 727px;
+                    width: unset;
+                }
+
+                .trial-crass__annlysis--title {
+                    margin-right: 25px;
+                    margin-left: auto;
+                    line-height: 18px;
+                    font-size: 12px;
+                    color: #ffffff;
+                    max-width: 163px;
+
+                    @media (min-width: 368px) {
+                        margin-right: 25px;
+                        max-width: 185px;
+                        line-height: 24px;
+                        font-size: 13px;
+                    }
+
+                    @media (min-width: 478px) {
+                        margin-right: 25px;
+                        max-width: 245px;
+                        line-height: 22px;
+                        font-size: 18px;
+                    }
+
+                    @media (min-width: 618px) {
+                        margin-right: 46px;
+                        max-width: 291px;
+                        line-height: 26px;
+                        font-size: 20px;
+                    }
+
+
+                    @media (min-width: 999px) {
+                        max-width: unset;
+                        margin-right: 46px;
+                        line-height: 35px;
+                        font-size: 24px;
+                    }
+                }
+
+                .trial-crass__annlysis--btn {
+                    margin: auto;
+                    max-width: 485px;
+                    margin-top: 40px;
+
+                    @media (min-width: 618px) {
+                        margin-top: 60px;
+
+                        &.btn-custom {
+                            margin-top: 40px !important;
+                        }
+                    }
+
+                    button {
+                        position: relative;
+                        display: block;
+                        margin: auto;
+                        font-size: 12px;
+                        line-height: 20px;
+                        padding: 18px 64px;
+                        border: 1px solid #ffffff;
+                        background: none;
+                        color: #ffffff;
+
+                        @media (min-width: 368px) {
+                            font-size: 16px;
+                            line-height: 25px;
+                            padding: 20px 0;
+                            min-width: 324px;
+                        }
+
+                        @media (min-width: 999px) {
+                            font-size: 24px;
+                            line-height: 33px;
+                            padding: 16px 80px;
+                            min-width: auto;
+
+                            &.trial-crass-btn {
+                                padding: 16px 50px !important;
+                                margin-left: 50px !important;
+                            }
+                        }
+
+                        span {
+                            position: absolute;
+                            width: 28px;
+                            text-align: center;
+                            line-height: 43px;
+                            height: 43px;
+                            top: 13px;
+                            right: 10px;
+                            color: #ffffff;
+
+                            @media (min-width: 999px) {
+                                right: 12px;
+                            }
+                        }
+                    }
+
+                    button:hover {
+                        opacity: 0.7;
+                    }
+
+                }
+            }
+
+            .trial-crass__about--box,
+            .trial-crass__about-text {
+                background-color: #1D2088;
+            }
+
+            .trial-crass__about--box {
+                width: 100%;
+
+                .trial-crass__about--title {
+                    span {
+                        &.title-analysis {
+                            left: 0;
+                            width: 221px;
+                            top: 36px;
+                            font-size: 80px;
+                            letter-spacing: -0.8px;
+                            line-height: 80px;
+                            opacity: 6%;
+
+                            @media (min-width: 478px) {
+                                font-size: 92px;
+                                letter-spacing: -0.64px;
+                                line-height: 86px;
+                            }
+
+                            @media (min-width: 618px) {
+                                font-size: 120px;
+                                letter-spacing: -1.12px;
+                                line-height: 100px;
+                                left: 12%;
+                            }
+
+                            @media (min-width: 999px) {
+                                width: 100%;
+                                left: 0;
+                                top: 60px;
+                                font-size: 190px;
+                                letter-spacing: -2px;
+                                line-height: 260px;
+                            }
+
+                            @media (min-width: 1360px) {
+                                width: 100%;
+                                left: 0;
+                                top: 40px;
+                                font-size: 260px;
+                                letter-spacing: -2.6px;
+                                line-height: 300px;
+                            }
+                        }
+
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+
+                .trial-crass__about--image {
+                    max-width: 80px;
+                    height: 81px;
+                    top: 28px;
+                    left: 28px;
+
+                    @media (min-width: 368px) {
+                        max-width: 100px;
+                        height: 101px;
+                        top: 35px;
+                        left: 35px;
+                    }
+
+                    @media (min-width: 478px) {
+                        max-width: 150px;
+                        height: 151px;
+                        top: 26px;
+                        left: 39px;
+                    }
+
+                    @media (min-width: 618px) {
+                        max-width: 180px;
+                        height: 181px;
+                        top: 30px;
+                        left: 46px;
+                    }
+
+                    @media (min-width: 999px) {
+                        max-width: 333px;
+                        height: 334px;
+                        bottom: 22px;
+                        top: 23px;
+                        left: 80px;
+
+                    }
+                }
+            }
+
+            .trial-crass__about-text {
+                z-index: 0;
+
+                div {
+                    display: none;
+                }
+            }
+        }
+    }
+}

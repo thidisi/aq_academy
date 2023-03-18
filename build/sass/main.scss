@@ -1,0 +1,73 @@
+:root {
+  --color-text: #1f1f1f;
+  --bs-body-color: #1f1f1f !important;
+  --bg-light: #fff;
+}
+
+
+html {
+  background: --bg-light;
+}
+
+main {
+  position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+}
+
+@import "~bootstrap/scss/bootstrap";
+@import "slick-carousel/slick/slick";
+@import "./modules/module_white_header";
+@import "./common";
+@import "./normalize";
+@import "./effect";
+@import "./layout/header";
+@import "./layout/btn-fixed";
+@import "./layout/footer";
+@import "./layout/layout";
+
+// global
+@import "./modules/module_global_course_slider";
+
+// top
+@import "./modules/module_top_banner";
+@import "./modules/module_top_recommend";
+@import "./modules/module_top_feature";
+@import "./modules/module_top_blog";
+@import "./modules/module_top_news";
+@import "./modules/module_top_access";
+
+// about
+@import "./modules/module_about_banner";
+@import "./modules/module_about_new";
+@import "./modules/module_about_content";
+@import "./modules/module_about_message";
+
+// course
+@import "./modules/module_course_banner";
+@import "./modules/module_course_specialty";
+@import "./modules/module_course_container";
+
+// banner trial crass
+@import "./modules/module_banner_trialCrass";
+
+//blog
+@import "./modules/module_blog";
+
+//achievement
+@import "./modules/module_achievement_record";
+@import "./modules/module_achievement_voice";
+
+//contact
+@import "./modules/module_contact_form";
+@import "./modules/module_official_line_account";
+
+//faq
+@import "./modules/module_faq";
+
+// trial
+@import "./modules/module_trial_banner";
+@import "./modules/module_trial_points";
+@import "./modules/module_trial_steps";

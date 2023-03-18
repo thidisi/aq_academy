@@ -1,0 +1,263 @@
+.page-module__course {
+    margin-top: 72px;
+    margin-bottom: 40px;
+    margin-left: 18px;
+    margin-right: 18px;
+
+    @media (min-width: 769px) {
+        margin: 40px 20px;
+    }
+
+    @media (min-width: 936px) {
+        margin: 80px 40px;
+    }
+
+    @media (min-width: 1229px) {
+        margin: 120px 80px;
+    }
+
+    .course-container {
+        justify-content: space-between;
+    }
+}
+
+
+.course-detail {
+    @media (min-width: 769px) {
+        max-width: 242px;
+    }
+
+    div {
+        h2 {
+            font-size: 23px;
+            letter-spacing: 0.92px;
+            line-height: 35px;
+            margin-bottom: 70px;
+            font-family: "SourceHanSans-Bold", sans-serif;
+
+            @media (min-width: 769px) {
+                margin-bottom: 64px;
+                font-size: 40px;
+                letter-spacing: 3.2px;
+                line-height: 58px;
+            }
+
+            &::after {
+                content: "";
+                position: relative;
+                bottom: -32px;
+                display: block;
+                width: 40px;
+                height: 3px;
+                background: #354FAD;
+            }
+        }
+
+        .course-detail__content {
+            p {
+                font-family: "SourceHanSans-Normal", sans-serif;
+                font-size: 16px;
+                letter-spacing: 1.28px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.course-content {
+    >.course-content__item:last-child {
+        margin-bottom: 60px;
+    }
+    @media (min-width: 769px) {
+        margin-left: 40px;
+        margin-right: 48px;
+        >.course-content__item:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    >.course-content__item:not(:last-child) {
+        margin-bottom: 40px;
+        @media (min-width: 769px) {
+            margin-bottom: 100px;
+        }
+    }
+
+    .course-content__item {
+        position: relative;
+
+        .course-content__item--top {
+            max-width: 712px;
+            padding-top: 35px;
+            margin-bottom: 32px;
+            .course-content__item--title {
+                position: relative;
+                z-index: 1;
+
+                div {
+                    width: 373px;
+                    @media (min-width: 769px) {
+                        width: 312px;
+                    }
+                }
+
+                h4 {
+                    margin-bottom: 0;
+                    position: absolute;
+                    left: 40px;
+                    top: -3px;
+                    @media (min-width: 769px) {
+                        top: -5px;
+                    }
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-family: "Montserrat-Bold", sans-serif;
+                }
+            }
+
+            .course-content__item--description {
+                &.description-size-custom{
+                    max-width: 671px;
+                }
+                p {
+                    margin-top: 16px;
+                    font-size: 16px;
+                    letter-spacing: 1.28px;
+                    line-height: 24px;
+                    font-family: "SourceHanSans-Normal", sans-serif;
+                }
+            }
+
+            h3 {
+                position: absolute;
+                margin: 0;
+                top: 16px;
+                right: -18px;
+                line-height: 49px;
+                font-size: 40px;
+                font-family: "Montserrat-Bold", sans-serif;
+                color: #F4F4F4;
+
+                @media (min-width: 769px) {
+                    right: -48px;
+                }
+            }
+        }
+
+        .course-content__item--bottom {
+            .course-content__science--content {
+                background-color: #F8F8F8;
+                width: calc(100% + 18px);
+                padding: 32px 13px 40px 24px;
+
+                @media (min-width: 769px) {
+                    padding: 40px 0;
+                    width: 100%;
+                }
+
+                &.course-row-2 {
+                    @media (min-width: 1136px) {
+                        padding: 40px 63px;
+                        display: flex;
+                        justify-content: space-between;
+                        >.course-content__science--list {
+                            margin: 0 !important;
+                        }
+                    }
+                }
+
+                >.course-content__science--list:not(:last-child) {
+                    margin-bottom: 32px;
+                    @media (min-width: 769px) {
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .course-content__science--list {
+                    @media (min-width: 769px) {
+                        margin-left: 63px;
+                    }
+
+                    .course-content__science--title {
+                        margin: 0;
+                        line-height: 24px;
+
+                        div {
+                            display: inline-block;
+                            height: 24px;
+                            img {
+                                height: 100%;
+                            }
+                        }
+
+                        span {
+                            font-family: "SourceHanSans-Bold", sans-serif;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: 1.28px;
+                            color: #354FAD;
+                        }
+                    }
+
+                    ul {
+                        padding: 0;
+                        margin-top: 12px;
+                        margin-bottom: 0;
+
+                        >li:not(:last-child) {
+                            margin-bottom: 8px;
+                            @media (min-width: 769px) {
+                                margin-bottom: 12px;
+                            }
+                        }
+
+                        li {
+                            margin: 0;
+                            line-height: 24px;
+
+                            div {
+                                display: inline-block;
+                                width: 80px;
+                                height: 24px;
+
+                                span {
+                                    height: 1px;
+                                    width: 100%;
+                                    color: #354FAD;
+                                    margin: auto !important;
+                                }
+                            }
+
+                            p {
+                                margin-bottom: 0;
+                                position: relative;
+                                font-size: 16px;
+                                letter-spacing: 1.28px;
+                                margin-left: 34px;
+                                font-family: "SourceHanSans-Normal", sans-serif;
+
+                                @media (min-width: 769px) {
+                                    margin-left: 90px;
+                                }
+
+                                &::before {
+                                    position: absolute;
+                                    content: "";
+                                    margin-top: 11px;
+                                    right: calc(100% + 10px);
+                                    height: 1px;
+                                    width: 24px;
+                                    background: #354FAD;
+
+                                    @media (min-width: 769px) {
+                                        width: 80px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

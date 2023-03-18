@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "SourceHanSans-Bold";
+  src: url("../fonts/SourceHanSans/SourceHanSans-Bold.otf");
+}
+
+@font-face {
+  font-family: "SourceHanSans-Heavy";
+  src: url("../fonts/SourceHanSans/SourceHanSans-Heavy.otf");
+}
+
+@font-face {
+  font-family: "SourceHanSans-Light";
+  src: url("../fonts/SourceHanSans/SourceHanSans-Light.otf");
+}
+
+@font-face {
+  font-family: "SourceHanSans-Medium";
+  src: url("../fonts/SourceHanSans/SourceHanSans-Medium.otf");
+}
+
+@font-face {
+  font-family: "SourceHanSans-Normal";
+  src: url("../fonts/SourceHanSans/SourceHanSans-Normal.otf");
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../fonts/SourceRaleway/Raleway-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../fonts/SourceRaleway/Raleway-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/SourceRaleway/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("../fonts/SourceRaleway/Raleway-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/SourceMontserrat/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/SourceMontserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../fonts/SourceMontserrat/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/SourceMontserrat/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/SourceMontserrat/Montserrat-Regular.ttf");
+}

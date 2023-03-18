@@ -1,0 +1,32 @@
+{
+    "extends": [
+        "plugin:@wordpress/eslint-plugin/esnext",
+        "eslint:recommended"
+    ],
+    "env": {
+        "browser": true,
+        "jquery": true
+    },
+    "plugins": [
+        "dollar-sign",
+        "jquery"
+    ], 
+    "rule" : {
+        "indent": [
+            "error" ,
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}
